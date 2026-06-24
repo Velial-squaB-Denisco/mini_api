@@ -11,7 +11,6 @@ def create_task(db: Session, task: schemas.TaskCreate):
     db.commit()
 
     return db_task
-    # return HTMLResponse(content="Task created successfully!", status_code=200)
 
 
 def get_tasks(db: Session, skip: int = 0, limit: int = 100):
