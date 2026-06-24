@@ -3,9 +3,8 @@ from sqlalchemy import Column, MetaData, ForeignKey, DateTime, Text, Integer,tex
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.ext.declarative import declarative_base
 
-# Base = declarative_base(metadata=MetaData(schema=config.APP_SCHEMA))
-Base = declarative_base()
 
+Base = declarative_base()
 
 def generate_fk_name(table_name: str, column_name: str) -> str:
     fk_name = f"{table_name}_{column_name}_fkey"

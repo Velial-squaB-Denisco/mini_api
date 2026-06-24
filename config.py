@@ -10,8 +10,6 @@ class Config:
 
     PROJECT_NAME: str = os.environ.get("PROJECT_NAME", "mini_api")
 
-    DB_URL_SYNC: str = os.environ.get("DB_URL_SYNC", "mini_api")
-
     DB_USER: str = os.environ.get("DB_USER", "")
     DB_PASS: str = os.environ.get("DB_PASS", "")
     DB_HOST: str = os.environ.get("DB_HOST", "127.0.0.1")

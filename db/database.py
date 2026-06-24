@@ -2,7 +2,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from config import config
-from sqlalchemy import create_engine
 
 class SqlSession:
     def __init__(self):
