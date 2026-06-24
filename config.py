@@ -5,7 +5,7 @@ from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
 class Config:
-    APP_SCHEMA = os.environ.get("APP_SCHEMA")
+    APP_SCHEMA = os.environ.get("APP_SCHEMA", "mini_api")
     DB_URL_SYNC = os.environ.get("DB_URL_SYNC", "sqlite:///./tasks.db")
 
     PROJECT_NAME: str = os.environ.get("PROJECT_NAME", "mini_api")
